@@ -11,3 +11,5 @@ C:\Users\parkdex\Desktop\workSpace\ChartTest\ChartTest\obj\Debug\ChartTest.pdb
 C:\Users\parkdex\Desktop\workSpace\ChartTest\ChartTest\obj\Debug\ChartTest.SubForms.SubForm_SeriesCount.resources
 C:\Users\parkdex\Desktop\workSpace\ChartTest\ChartTest\obj\Debug\ChartTest.SubForms.SubForm_SeriesType.resources
 C:\Users\parkdex\Desktop\workSpace\ChartTest\ChartTest\obj\Debug\ChartTest.SubForms.SubForm_MinMax.resources
+C:\Users\parkdex\Desktop\workSpace\ChartTest\ChartTest\obj\Debug\ChartTest.SubForms.SubForm_NewChart.resources
+C:\Users\parkdex\Desktop\workSpace\ChartTest\ChartTest\obj\Debug\ChartTest.SubForms.SubForm_NewChartDynamic.resources

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 using ChartTest.SubForms;
 using System.Windows.Forms.DataVisualization.Charting;
+using System.IO;
 
 namespace ChartTest
 {
@@ -134,6 +135,23 @@ namespace ChartTest
             chart_main.ChartAreas[0].AxisY.Maximum = _max;
         }
 
+        private void btn_NewChart_Click(object sender, EventArgs e)
+        {
+            using (MemoryStream stream = new MemoryStream())
+            {
+                chart_main.Serializer.Save(stream);
+                //stream.Seek(0, SeekOrigin.Begin);
 
+                SubForm_NewChart newChartForm = new SubForm_NewChart(stream);
+                newChartForm.ShowDialog();
+            }            
+        }
+
+        private void btn_NewChartDynamic_Click(object sender, EventArgs e)
+        {
+            // 이건 내일하자 
+            SubForm_NewChartDynamic dynamicChartForm = new SubForm_NewChartDynamic();
+            dynamicChartForm.ShowDialog();
+        }
     }
 }
