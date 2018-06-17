@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.chart_main = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -43,8 +43,8 @@
             this.btn_SeriesColor = new System.Windows.Forms.Button();
             this.btn_AxisX = new System.Windows.Forms.Button();
             this.btn_MinMax = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.btn_NewChart = new System.Windows.Forms.Button();
+            this.btn_NewChartDynamic = new System.Windows.Forms.Button();
             this.timer_main = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_main)).BeginInit();
@@ -68,17 +68,17 @@
             // 
             // chart_main
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart_main.ChartAreas.Add(chartArea2);
+            chartArea1.Name = "ChartArea1";
+            this.chart_main.ChartAreas.Add(chartArea1);
             this.chart_main.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend2.Name = "Legend1";
-            this.chart_main.Legends.Add(legend2);
+            legend1.Name = "Legend1";
+            this.chart_main.Legends.Add(legend1);
             this.chart_main.Location = new System.Drawing.Point(3, 3);
             this.chart_main.Name = "chart_main";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart_main.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart_main.Series.Add(series1);
             this.chart_main.Size = new System.Drawing.Size(879, 755);
             this.chart_main.TabIndex = 0;
             this.chart_main.Text = "chart1";
@@ -104,8 +104,8 @@
             this.tableLayoutPanel2.Controls.Add(this.btn_SeriesColor, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.btn_AxisX, 0, 6);
             this.tableLayoutPanel2.Controls.Add(this.btn_MinMax, 0, 7);
-            this.tableLayoutPanel2.Controls.Add(this.button9, 0, 8);
-            this.tableLayoutPanel2.Controls.Add(this.button10, 0, 9);
+            this.tableLayoutPanel2.Controls.Add(this.btn_NewChart, 0, 8);
+            this.tableLayoutPanel2.Controls.Add(this.btn_NewChartDynamic, 0, 9);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(888, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -211,25 +211,27 @@
             this.btn_MinMax.UseVisualStyleBackColor = true;
             this.btn_MinMax.Click += new System.EventHandler(this.btn_MinMax_Click);
             // 
-            // button9
+            // btn_NewChart
             // 
-            this.button9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button9.Location = new System.Drawing.Point(3, 603);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(87, 69);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btn_NewChart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_NewChart.Location = new System.Drawing.Point(3, 603);
+            this.btn_NewChart.Name = "btn_NewChart";
+            this.btn_NewChart.Size = new System.Drawing.Size(87, 69);
+            this.btn_NewChart.TabIndex = 8;
+            this.btn_NewChart.Text = "현 차트 복사하기 (정적)";
+            this.btn_NewChart.UseVisualStyleBackColor = true;
+            this.btn_NewChart.Click += new System.EventHandler(this.btn_NewChart_Click);
             // 
-            // button10
+            // btn_NewChartDynamic
             // 
-            this.button10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button10.Location = new System.Drawing.Point(3, 678);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(87, 74);
-            this.button10.TabIndex = 9;
-            this.button10.Text = "button10";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btn_NewChartDynamic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_NewChartDynamic.Location = new System.Drawing.Point(3, 678);
+            this.btn_NewChartDynamic.Name = "btn_NewChartDynamic";
+            this.btn_NewChartDynamic.Size = new System.Drawing.Size(87, 74);
+            this.btn_NewChartDynamic.TabIndex = 9;
+            this.btn_NewChartDynamic.Text = "현 차트 복사하기 (다이나믹)";
+            this.btn_NewChartDynamic.UseVisualStyleBackColor = true;
+            this.btn_NewChartDynamic.Click += new System.EventHandler(this.btn_NewChartDynamic_Click);
             // 
             // timer_main
             // 
@@ -265,8 +267,8 @@
         private System.Windows.Forms.Button btn_SeriesColor;
         private System.Windows.Forms.Button btn_AxisX;
         private System.Windows.Forms.Button btn_MinMax;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btn_NewChart;
+        private System.Windows.Forms.Button btn_NewChartDynamic;
         private System.Windows.Forms.Timer timer_main;
     }
 }

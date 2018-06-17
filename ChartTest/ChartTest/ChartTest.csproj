@@ -60,6 +60,18 @@
     <Compile Include="SubForms\SubForm_MinMax.Designer.cs">
       <DependentUpon>SubForm_MinMax.cs</DependentUpon>
     </Compile>
+    <Compile Include="SubForms\SubForm_NewChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\SubForm_NewChart.Designer.cs">
+      <DependentUpon>SubForm_NewChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\SubForm_NewChartDynamic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\SubForm_NewChartDynamic.Designer.cs">
+      <DependentUpon>SubForm_NewChartDynamic.cs</DependentUpon>
+    </Compile>
     <Compile Include="SubForms\SubForm_SeriesCount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +98,12 @@
     </Compile>
     <EmbeddedResource Include="SubForms\SubForm_MinMax.resx">
       <DependentUpon>SubForm_MinMax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\SubForm_NewChart.resx">
+      <DependentUpon>SubForm_NewChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\SubForm_NewChartDynamic.resx">
+      <DependentUpon>SubForm_NewChartDynamic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SubForms\SubForm_SeriesCount.resx">
       <DependentUpon>SubForm_SeriesCount.cs</DependentUpon>
