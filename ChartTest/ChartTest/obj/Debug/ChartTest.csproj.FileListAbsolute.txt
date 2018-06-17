@@ -13,6 +13,7 @@ C:\Users\parkdex\Desktop\workSpace\ChartTest\ChartTest\obj\Debug\ChartTest.SubFo
 C:\Users\parkdex\Desktop\workSpace\ChartTest\ChartTest\obj\Debug\ChartTest.SubForms.SubForm_MinMax.resources
 C:\Users\parkdex\Desktop\workSpace\ChartTest\ChartTest\obj\Debug\ChartTest.SubForms.SubForm_NewChart.resources
 C:\Users\parkdex\Desktop\workSpace\ChartTest\ChartTest\obj\Debug\ChartTest.SubForms.SubForm_NewChartDynamic.resources
+<<<<<<< HEAD
 C:\Users\parkdex\Desktop\ChartTest\ChartTest\ChartTest\bin\Debug\ChartTest.exe.config
 C:\Users\parkdex\Desktop\ChartTest\ChartTest\ChartTest\bin\Debug\ChartTest.exe
 C:\Users\parkdex\Desktop\ChartTest\ChartTest\ChartTest\bin\Debug\ChartTest.pdb
@@ -28,3 +29,5 @@ C:\Users\parkdex\Desktop\ChartTest\ChartTest\ChartTest\obj\Debug\ChartTest.cspro
 C:\Users\parkdex\Desktop\ChartTest\ChartTest\ChartTest\obj\Debug\ChartTest.csproj.CoreCompileInputs.cache
 C:\Users\parkdex\Desktop\ChartTest\ChartTest\ChartTest\obj\Debug\ChartTest.exe
 C:\Users\parkdex\Desktop\ChartTest\ChartTest\ChartTest\obj\Debug\ChartTest.pdb
+=======
+>>>>>>> b4366bc9fcd4cafd0d5e41194f973f903a7c8cfe

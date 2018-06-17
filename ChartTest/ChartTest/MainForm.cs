@@ -150,7 +150,11 @@ namespace ChartTest
         private void btn_NewChartDynamic_Click(object sender, EventArgs e)
         {
             // 이건 내일하자 
+<<<<<<< HEAD
             SubForm_NewChartDynamic dynamicChartForm = new SubForm_NewChartDynamic(chart_main);
+=======
+            SubForm_NewChartDynamic dynamicChartForm = new SubForm_NewChartDynamic();
+>>>>>>> b4366bc9fcd4cafd0d5e41194f973f903a7c8cfe
             dynamicChartForm.ShowDialog();
         }
     }
